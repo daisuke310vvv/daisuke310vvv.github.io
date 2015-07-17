@@ -1,88 +1,71 @@
+
 <!DOCTYPE html>
+<html lang="en-us">
+<head>
 
-<meta charset="utf-8">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="http://localhost:1313/">
-
-
-<meta property="og:type" content="article">
-<meta property="og:title" content="Objective-CからSwiftに移行して2週間経った感想 &middot; Just in Code.">
-
-<meta property="og:site_name" content="Just in Code.">
-
-<title>
-    
-    Objective-CからSwiftに移行して2週間経った感想
-    
-</title>
+  
+  <meta charset="UTF-8">
+  <title>
+    Objective-CからSwiftに移行して2週間経った感想 | Just in Code.
+  </title>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/">
-<link rel="stylesheet" href="http://localhost:1313//css/styles.css">
-<link rel="stylesheet" href="http://localhost:1313//css/custom.css">
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
 
-<link rel="shortcut icon" href="http://localhost:1313//assets/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/highlight_monokai.css">
+  <link rel="stylesheet/less" href="/css/theme.less">
+  <link rel="stylesheet" href="/css/custom.css">
 
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:1313//index.xml">
+  
+  <script src="/js/less.js" type="text/javascript"></script>
 
 
+</head>
+
+
+
+<body>
 <div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="http://localhost:1313/">Just in Code.</a>
-                </div>
 
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="http://localhost:1313//post">All Posts</a></li>
-                        
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="/">Just in Code.</a></h1>
+        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </header>
 
 
-<div class="row">
-    <div class="col-md-8">
-        <article class="post">
-
-            <header>
-                <div class="post-date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    <time datetime="Jul 17 2015">
-                        Jul 17 2015
-                    </time>
-                </div>
-                <h1 class="post-title">
-                    <a href="http://localhost:1313/post/be-swifty/">Objective-CからSwiftに移行して2週間経った感想</a>
-                </h1>
-            </header>
-
-            <div class="post-content">
-                
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>Objective-CからSwiftに移行して2週間経った感想</h1>
+      <div class="meta">
+        Jul 17, 2015 &nbsp;
+        
+          #<a href="/tags/swift">Swift</a>&nbsp;
+        
+          #<a href="/tags/ios">iOS</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
 
 <h2 id="swiftに移行した:9c41c890be2d301475e94c72a08a25fa">Swiftに移行した</h2>
 
@@ -91,9 +74,7 @@ NextSTEP時代から使われてきたObjective-Cに置き換わるApple製の�
 私もその波に乗り、Objective-CからSwiftへ&hellip;!!と思っていたのですが、なんだかんだObjective-Cで書き続けるという老害ぶりを発揮.<br />
 気が付くと突如現れた日から１年が経ち&hellip;その一年後のWWDCでさらなる衝撃が起こりました.</p>
 
-<p>//<img src="http://daisuke310vvv.github.io/static/images/swift2_opensource.jpg" alt="Swift2" title="Swift2.0" />
-
-<img src="http://localhost:1313/static/images/swift2_opensource.jpg" alt="Swift2" title="Swift2.0" />
+<p><img src="http://daisuke310vvv.github.io/static/images/swift2_opensource.jpg" alt="Swift2" title="Swift2.0" />
 </p>
 
 <h3 id="swift2-0-open-source:9c41c890be2d301475e94c72a08a25fa">Swift2.0 - Open Source</h3>
@@ -170,129 +151,45 @@ Objective-Cを書いていれば、Swiftに書き直す分にはそれほどコ�
 
 <p>今後このブログでは技術関連の話を書いていければなと思います.</p>
 
-            </div>
+    </article>
+    
 
-            <aside>
-                
-                <ul class="list-inline post-tags">
-                    
-                    <li>
-                        <a href="http://localhost:1313//tags/swift">
-                            <i class="fa fa-tags"></i>
-                            Swift
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://localhost:1313//tags/ios">
-                            <i class="fa fa-tags"></i>
-                            iOS
-                        </a>
-                    </li>
-                    
-                </ul>
 
-                
-            
-            <footer>
+<script type="text/javascript">
+     
+    var disqus_shortname = '';
 
-                <nav>
-                    <ul class="pager">
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-                        
-                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        
+  </main>
 
-                        <li><a href="http://localhost:1313//post">All Posts</a></li>
 
-                        
-                        <li class="next"><a href="http://localhost:1313/post/first/">Newer <span aria-hidden="true">&rarr;</span></a></li>
-                        
-
-                    </ul>
-                </nav>
-
-                
-            </footer>
-
-        </article>
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      
     </div>
-    <div class="col-md-4">
-        
-<aside>
-    <div class="row">
+  </footer>
 
-        <div class="col-xs-12 col-sm-4 col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Recent Posts</h2>
-                </div>
-                <div class="list-group">
-                    
-                    <a href="/post/be-swifty/" class="list-group-item">Objective-CからSwiftに移行して2週間経った感想</a>
-                    
-                    <a href="/post/first/" class="list-group-item">First Post</a>
-                    
-                </div>
-            </div>
-        </div>
 
-        <div class="col-xs-12 col-sm-4 col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Tags</h2>
-                </div>
-                <div class="list-group">
-                    
-                    
-                    
-                    <a href="http://localhost:1313//tags/ios" class="list-group-item">
-                        <span class="badge">1</span>
-                        ios
-                    </a>
-                    
-                    
-                    <a href="http://localhost:1313//tags/swift" class="list-group-item">
-                        <span class="badge">1</span>
-                        swift
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-
-    </div>
-</aside>
-
-    </div>
 </div>
 
-</div>
-<hr>
-
-<footer class="container copy">
-    <p>&copy; 2015  Just in Code. </p>
-	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
-	<p>Theme <a href="https://github.com/dim0627/hugo_theme_hugostrap" target="_blank">Hugostrap</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a>, Inspired from <a href="https://github.com/kAworu/octostrap3" target="_blank">Octostrap3</a></p>
-</footer>
-
-<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script src="/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', '', 'auto');
-ga('send', 'pageview');
 
-</script>
-
-<script>
-document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
-</script>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
 

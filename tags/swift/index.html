@@ -1,124 +1,94 @@
+
 <!DOCTYPE html>
+<html lang="en-us">
+<head>
 
-<meta charset="utf-8">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-<meta property="og:url" content="http://localhost:1313/">
-
-
-<meta property="og:title" content="Just in Code.">
-
-<meta property="og:site_name" content="Just in Code.">
-
-<title>
-    
-    Just in Code.
-    
-</title>
+  
+  <meta charset="UTF-8">
+  <title>
+    Swift | Just in Code.
+  </title>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/">
-<link rel="stylesheet" href="http://localhost:1313//css/styles.css">
-<link rel="stylesheet" href="http://localhost:1313//css/custom.css">
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
 
-<link rel="shortcut icon" href="http://localhost:1313//assets/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/highlight_monokai.css">
+  <link rel="stylesheet/less" href="/css/theme.less">
+  <link rel="stylesheet" href="/css/custom.css">
 
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:1313//index.xml">
+  
+  <script src="/js/less.js" type="text/javascript"></script>
 
 
+</head>
+
+
+
+<body>
 <div class="container">
-    <header class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="http://localhost:1313/">Just in Code.</a>
-                </div>
 
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="http://localhost:1313//post">All Posts</a></li>
-                        
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-<div class="posts">
-    
-    
-<article class="post">
-    <header>
-        <div class="post-date">
-            <span class="glyphicon glyphicon-calendar"></span>
-            <time datetime="Jul 17 2015">
-                Jul 17 2015
-            </time>
-        </div>
-        <h1 class="post-title">
-            <a href="http://localhost:1313/post/be-swifty/">Objective-CからSwiftに移行して2週間経った感想</a>
-        </h1>
-    </header>
-    <div class="post-content">
-        Swiftに移行した ちょうど1年ほど前のWWDCで突如現れたSwift. NextSTEP時代から使われてきたObjective-Cに置き換わるApple製の新しい言語として、この一年でかなりのiOSエンジニアがObjective-CからSwiftに移行してきたと思います. 私もその波に乗り、Objective-CからSwiftへ&hellip;!!と思っていたのですが、なんだかんだObjective-Cで書き続けるという老害ぶりを発揮. 気が付くと突如現れた日から１年が経ち&hellip;その一年後のWWDCでさらなる衝撃が起こりました. // Swift2.0 - Open Source マジか!!!!!!!!!!! Swiftグイグイきてるな&hellip; これからOSSしようと思ってもObjective-Cで書いてもな&hellip;ッて感じだし&hellip; ということで、タイミングもあってObjective-CからSwiftに移行しました(ようやく). その時にやったことと感想を少しだけまとめておこうと思います. 1. Swiftの本を読む. Swiftの発表から１年が経ち、日本語の本も数多く出てきました. いくつか定番になりつつある本がありますが、私はObjective-Cの時にもお世話になった「詳解Swift」を一通り読みました. この本は言語仕様について詳しく書いてあるので、１冊持っておくとわからなくなった時に読み返したりできて便利な本でもあると思います. (UIKitを使ってiOSアプリを開発する、という本ではありません.) Objective-CとSwiftでの違いを確認したり、新しく加わった機能や、変更された箇所などを一通り見ていきました. Optional型 構造体 列挙型 プロトコル クロージャ ジェネリクス あたりが非常に勉強になりました. 一通り読んでみてだいぶObjective-Cとは違うなあと感じたことと、Swiftらしく書こうと思うとだいぶ違ったものになりそうだなあと思いました. Objective-Cは名前の通り、Cにオブジェクト指向を取り入れた言語なので、C言語のプリミティブな型とその他のクラスでオブジェクト指向でガリガリ書く感じだったのに比べて、 Swiftではそもそもオブジェクト指向っぽく設計されていない感じがしました. というのも、クラスと同等の機能が構造体や列挙型といった値型のデータ構造にあったり、クロージャやジェネリクスの辺りから関数型っぽい部分があったり&hellip; またプロトコルもSwift2.0からは実装を持つことができるようになる点も気になりました. 2. いくつかアプリを作る. 詳解Swiftを読んだ後、いくつかのアプリ(カメラを使ったものや、RSSリーダのようなもの)を作ってみました. アプリの全体的な構造やタイミング等は変わらないので、変数(定数)やメソッド(関数)の宣言での書き方の違いなどを実際に書いてみて覚えていきました. この段階で一応Objective-Cで書いていたようなことをSwiftで書きなおすことができるようになってきました. 実際にコードを書いてみて感じたことを3つ. ファイル数が減った Objective-Cでは一つのクラスを作った場合ヘッダーファイルと実装ファイルの２つのファイルが必要でしたが、Swiftでは一つになりました. これによってヘッダーと実装ファイルの行き来がなくなって幸せになりました. またその関係?でProject単位でモジュール化されているようです. あるモジュールがあった時に、その中のファイルは全てそのモジュールに属するようで、ファイルに対するスコープもpublic, internal, privateとなっていて、 同じモジュール内であれば別ファイルをわざわざimportする必要がなくなりました. Optional型が幅を利かせている 変数(定数)の定義時やプロパティにアクセスする時、関数を呼ぶ時などいろんな場面でOptionalを意識する必要があります. Optional束縛構文やOptionalチェーンなど、事前にnilかどうかの判定ができて非常に便利ですが、慣れていないので戸惑うことが多くあります. クラスか構造体かenumか&hellip; まとまったデータ構造を定義する時、クラスか構造体かenumのどれを使って定義するのか迷います. 大きな違いは、値型か参照型かだと思いますがまだハッキリと使い分けができない状況です. (知見がほしい) 3. Github上のコードを読む &amp; ブログやスライドを見る githubに上がっているコードやネット上のブログやスライドを読み漁りました. すでに登場から１年が過ぎているので溜まっている先人たちのブログやスライド、コードを読んで勉強しています. 探せばいくらでも出てくるので、一日中読みふけることができます. 議論としては、変数と定数どちらで定義するかといったことから、Objective-CとSwiftではパフォーマンスはどうなんだとか、オブジェクト指向なのかプロトコル指向なのか、いやいや関数型プログラミングだ!みたいなものなどいろいろ見つかりました. 新しい言語でこれからって感じがするのでどんどん知見を貯めてキャッチアップしていきたいところです. 移行できたは良いけども という具合に移行して約2週間ほど経ちましたが、 結論を言うと、早くから移行しておけばよかったな&hellip;と思いました. Objective-Cを書いていれば、Swiftに書き直す分にはそれほどコストはかかりませんでしたし、コードを書く量も減りました. ただ、移行することはよりもSwiftらしく書こうと思えばまた別に問題になってくることが分かりました. 現状、移行できたは良いけれども、まだまったくSwiftの新しい言語仕様の恩恵を受けることなくコードを書いてい辛い感じなので、ひたすら勉強しようと思います. 今後このブログでは技術関連の話を書いていければなと思います.
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="/">Just in Code.</a></h1>
+        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          
+          
+          
+        </ul>
+      </div>
     </div>
-    <footer class="readon">
-        <a href="http://localhost:1313/post/be-swifty/" class="btn btn-default">
-            READ ON
-        </a>
-    </footer>
-</article>
-<hr>
+  </header>
 
+
+  
+  <main id="list" role="main">
+    <div class="article-header light-gray"><h1>#Swift</h1></div>
     
-</div>
+    <div class="summary">
+      <h2><a href="http://localhost:1313/post/be-swifty/">Objective-CからSwiftに移行して2週間経った感想 :: DRAFT</a></h2>
+      <div class="meta">
+        Jul 17, 2015 &nbsp;
+        
+          #<a href="/tags/swift">Swift</a>&nbsp;
+        
+          #<a href="/tags/ios">iOS</a>&nbsp;
+        
+      </div>
+    </div>
+    
+  </main>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      
+    </div>
+  </footer>
+
 
 </div>
-<hr>
 
-<footer class="container copy">
-    <p>&copy; 2015  Just in Code. </p>
-	<p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a></p>
-	<p>Theme <a href="https://github.com/dim0627/hugo_theme_hugostrap" target="_blank">Hugostrap</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a>, Inspired from <a href="https://github.com/kAworu/octostrap3" target="_blank">Octostrap3</a></p>
-</footer>
-
-<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script src="/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', '', 'auto');
-ga('send', 'pageview');
 
-</script>
-
-<script>
-document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
-</script>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
 

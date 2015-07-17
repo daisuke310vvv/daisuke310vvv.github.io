@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Just in Code. </title>
+    <title>Ios on Just in Code.</title>
     <link>http://localhost:1313/tags/ios/</link>
+    <description>Recent content in Ios on Just in Code.</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2015</rights>
-    <updated>2015-07-17 15:18:52 &#43;0900 JST</updated>
-
+    <lastBuildDate>Fri, 17 Jul 2015 15:18:52 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Objective-CからSwiftに移行して2週間経った感想</title>
+      <link>http://localhost:1313/post/be-swifty/</link>
+      <pubDate>Fri, 17 Jul 2015 15:18:52 +0900</pubDate>
       
-        <item>
-          <title>Objective-CからSwiftに移行して2週間経った感想</title>
-          <link>http://localhost:1313/post/be-swifty/</link>
-          <pubDate>Fri, 17 Jul 2015 15:18:52 JST</pubDate>
-          <author></author>
-          <guid>http://localhost:1313/post/be-swifty/</guid>
-          <description>
+      <guid>http://localhost:1313/post/be-swifty/</guid>
+      <description>
 
 &lt;h2 id=&#34;swiftに移行した:9c41c890be2d301475e94c72a08a25fa&#34;&gt;Swiftに移行した&lt;/h2&gt;
 
@@ -25,9 +24,7 @@ NextSTEP時代から使われてきたObjective-Cに置き換わるApple製の�
 私もその波に乗り、Objective-CからSwiftへ&amp;hellip;!!と思っていたのですが、なんだかんだObjective-Cで書き続けるという老害ぶりを発揮.&lt;br /&gt;
 気が付くと突如現れた日から１年が経ち&amp;hellip;その一年後のWWDCでさらなる衝撃が起こりました.&lt;/p&gt;
 
-&lt;p&gt;//&lt;img src=&#34;http://daisuke310vvv.github.io/static/images/swift2_opensource.jpg&#34; alt=&#34;Swift2&#34; title=&#34;Swift2.0&#34; /&gt;
-
-&lt;img src=&#34;http://localhost:1313/static/images/swift2_opensource.jpg&#34; alt=&#34;Swift2&#34; title=&#34;Swift2.0&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://daisuke310vvv.github.io/static/images/swift2_opensource.jpg&#34; alt=&#34;Swift2&#34; title=&#34;Swift2.0&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;swift2-0-open-source:9c41c890be2d301475e94c72a08a25fa&#34;&gt;Swift2.0 - Open Source&lt;/h3&gt;
@@ -104,9 +101,7 @@ Objective-Cを書いていれば、Swiftに書き直す分にはそれほどコ�
 
 &lt;p&gt;今後このブログでは技術関連の話を書いていければなと思います.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>

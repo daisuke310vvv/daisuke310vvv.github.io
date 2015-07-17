@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Just in Code. </title>
+    <title>Just in Code.</title>
     <link>http://daisuke310vvv.github.io/</link>
+    <description>Recent content on Just in Code.</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2015</rights>
-    <updated>2015-07-14 00:00:00 &#43;0000 UTC</updated>
-
+    <lastBuildDate>Tue, 14 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://daisuke310vvv.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>First Post</title>
+      <link>http://daisuke310vvv.github.io/post/first/</link>
+      <pubDate>Tue, 14 Jul 2015 00:00:00 +0000</pubDate>
       
-        <item>
-          <title>First Post</title>
-          <link>http://daisuke310vvv.github.io/post/first/</link>
-          <pubDate>Tue, 14 Jul 2015 00:00:00 UTC</pubDate>
-          <author></author>
-          <guid>http://daisuke310vvv.github.io/post/first/</guid>
-          <description>
+      <guid>http://daisuke310vvv.github.io/post/first/</guid>
+      <description>
 
 &lt;h2 id=&#34;ブログ作成:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;ブログ作成!&lt;/h2&gt;
 
 &lt;p&gt;主に技術関連です.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>
