@@ -6,8 +6,102 @@
     <description>Recent content on Just in Code.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2015 15:18:52 +0900</lastBuildDate>
     <atom:link href="http://daisuke310vvv.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Objective-CからSwiftに移行して2週間経った感想</title>
+      <link>http://daisuke310vvv.github.io/post/be-swifty/</link>
+      <pubDate>Fri, 17 Jul 2015 15:18:52 +0900</pubDate>
+      
+      <guid>http://daisuke310vvv.github.io/post/be-swifty/</guid>
+      <description>
+
+&lt;h2 id=&#34;swiftに移行した:9c41c890be2d301475e94c72a08a25fa&#34;&gt;Swiftに移行した&lt;/h2&gt;
+
+&lt;p&gt;ちょうど1年ほど前のWWDCで突如現れたSwift.&lt;br /&gt;
+NextSTEP時代から使われてきたObjective-Cに置き換わるApple製の新しい言語として、この一年でかなりのiOSエンジニアがObjective-CからSwiftに移行してきたと思います.&lt;br /&gt;
+私もその波に乗り、Objective-CからSwiftへ&amp;hellip;!!と思っていたのですが、なんだかんだObjective-Cで書き続けるという老害ぶりを発揮.&lt;br /&gt;
+気が付くと突如現れた日から１年が経ち&amp;hellip;その一年後のWWDCでさらなる衝撃が起こりました.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://daisuke310vvv.github.io/static/images/swift2_opensource.jpg&#34; alt=&#34;Swift2&#34; title=&#34;Swift2.0&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;swift2-0-open-source:9c41c890be2d301475e94c72a08a25fa&#34;&gt;Swift2.0 - Open Source&lt;/h3&gt;
+
+&lt;h3 id=&#34;マジか:9c41c890be2d301475e94c72a08a25fa&#34;&gt;マジか!!!!!!!!!!!&lt;/h3&gt;
+
+&lt;p&gt;Swiftグイグイきてるな&amp;hellip;&lt;br /&gt;
+これからOSSしようと思ってもObjective-Cで書いてもな&amp;hellip;ッて感じだし&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;ということで、タイミングもあってObjective-CからSwiftに移行しました(ようやく).&lt;br /&gt;
+その時にやったことと感想を少しだけまとめておこうと思います.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-swiftの本を読む:9c41c890be2d301475e94c72a08a25fa&#34;&gt;1. Swiftの本を読む.&lt;/h2&gt;
+
+&lt;p&gt;Swiftの発表から１年が経ち、日本語の本も数多く出てきました.
+いくつか定番になりつつある本がありますが、私はObjective-Cの時にもお世話になった「詳解Swift」を一通り読みました.&lt;br /&gt;
+この本は言語仕様について詳しく書いてあるので、１冊持っておくとわからなくなった時に読み返したりできて便利な本でもあると思います.&lt;br /&gt;
+(UIKitを使ってiOSアプリを開発する、という本ではありません.)&lt;br /&gt;
+Objective-CとSwiftでの違いを確認したり、新しく加わった機能や、変更された箇所などを一通り見ていきました.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Optional型&lt;/li&gt;
+&lt;li&gt;構造体&lt;/li&gt;
+&lt;li&gt;列挙型&lt;/li&gt;
+&lt;li&gt;プロトコル&lt;/li&gt;
+&lt;li&gt;クロージャ&lt;/li&gt;
+&lt;li&gt;ジェネリクス&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;あたりが非常に勉強になりました.&lt;br /&gt;
+一通り読んでみてだいぶObjective-Cとは違うなあと感じたことと、Swiftらしく書こうと思うとだいぶ違ったものになりそうだなあと思いました.&lt;br /&gt;
+Objective-Cは名前の通り、Cにオブジェクト指向を取り入れた言語なので、C言語のプリミティブな型とその他のクラスでオブジェクト指向でガリガリ書く感じだったのに比べて、
+Swiftではそもそもオブジェクト指向っぽく設計されていない感じがしました.
+というのも、クラスと同等の機能が構造体や列挙型といった値型のデータ構造にあったり、クロージャやジェネリクスの辺りから関数型っぽい部分があったり&amp;hellip;&lt;br /&gt;
+またプロトコルもSwift2.0からは実装を持つことができるようになる点も気になりました.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-いくつかアプリを作る:9c41c890be2d301475e94c72a08a25fa&#34;&gt;2. いくつかアプリを作る.&lt;/h2&gt;
+
+&lt;p&gt;詳解Swiftを読んだ後、いくつかのアプリ(カメラを使ったものや、RSSリーダのようなもの)を作ってみました.&lt;br /&gt;
+アプリの全体的な構造やタイミング等は変わらないので、変数(定数)やメソッド(関数)の宣言での書き方の違いなどを実際に書いてみて覚えていきました.
+この段階で一応Objective-Cで書いていたようなことをSwiftで書きなおすことができるようになってきました.&lt;/p&gt;
+
+&lt;p&gt;実際にコードを書いてみて感じたことを3つ.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ファイル数が減った&lt;br /&gt;
+Objective-Cでは一つのクラスを作った場合ヘッダーファイルと実装ファイルの２つのファイルが必要でしたが、Swiftでは一つになりました.
+これによってヘッダーと実装ファイルの行き来がなくなって幸せになりました.&lt;br /&gt;
+またその関係?でProject単位でモジュール化されているようです. あるモジュールがあった時に、その中のファイルは全てそのモジュールに属するようで、ファイルに対するスコープもpublic,  internal, privateとなっていて、&lt;br /&gt;
+同じモジュール内であれば別ファイルをわざわざimportする必要がなくなりました.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Optional型が幅を利かせている&lt;br /&gt;
+変数(定数)の定義時やプロパティにアクセスする時、関数を呼ぶ時などいろんな場面でOptionalを意識する必要があります.&lt;br /&gt;
+Optional束縛構文やOptionalチェーンなど、事前にnilかどうかの判定ができて非常に便利ですが、慣れていないので戸惑うことが多くあります.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;クラスか構造体かenumか&amp;hellip;&lt;br /&gt;
+まとまったデータ構造を定義する時、クラスか構造体かenumのどれを使って定義するのか迷います.&lt;br /&gt;
+大きな違いは、値型か参照型かだと思いますがまだハッキリと使い分けができない状況です. (知見がほしい)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;3-github上のコードを読む-ブログやスライドを見る:9c41c890be2d301475e94c72a08a25fa&#34;&gt;3. Github上のコードを読む &amp;amp; ブログやスライドを見る&lt;/h2&gt;
+
+&lt;p&gt;githubに上がっているコードやネット上のブログやスライドを読み漁りました. すでに登場から１年が過ぎているので溜まっている先人たちのブログやスライド、コードを読んで勉強しています.&lt;br /&gt;
+探せばいくらでも出てくるので、一日中読みふけることができます.&lt;br /&gt;
+議論としては、変数と定数どちらで定義するかといったことから、Objective-CとSwiftではパフォーマンスはどうなんだとか、オブジェクト指向なのかプロトコル指向なのか、いやいや関数型プログラミングだ!みたいなものなどいろいろ見つかりました.&lt;br /&gt;
+新しい言語でこれからって感じがするのでどんどん知見を貯めてキャッチアップしていきたいところです.&lt;/p&gt;
+
+&lt;h2 id=&#34;移行できたは良いけども:9c41c890be2d301475e94c72a08a25fa&#34;&gt;移行できたは良いけども&lt;/h2&gt;
+
+&lt;p&gt;という具合に移行して約2週間ほど経ちましたが、 結論を言うと、早くから移行しておけばよかったな&amp;hellip;と思いました.&lt;br /&gt;
+Objective-Cを書いていれば、Swiftに書き直す分にはそれほどコストはかかりませんでしたし、コードを書く量も減りました.&lt;br /&gt;
+ただ、移行することはよりもSwiftらしく書こうと思えばまた別に問題になってくることが分かりました.
+現状、移行できたは良いけれども、まだまったくSwiftの新しい言語仕様の恩恵を受けることなくコードを書いてい辛い感じなので、ひたすら勉強しようと思います.&lt;/p&gt;
+
+&lt;p&gt;今後このブログでは技術関連の話を書いていければなと思います.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>First Post</title>

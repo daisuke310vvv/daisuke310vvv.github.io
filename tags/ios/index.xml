@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ios on Just in Code.</title>
-    <link>http://localhost:1313/tags/ios/</link>
+    <link>http://daisuke310vvv.github.io/tags/ios/</link>
     <description>Recent content in Ios on Just in Code.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2015 15:18:52 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://daisuke310vvv.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Objective-CからSwiftに移行して2週間経った感想</title>
-      <link>http://localhost:1313/post/be-swifty/</link>
+      <link>http://daisuke310vvv.github.io/post/be-swifty/</link>
       <pubDate>Fri, 17 Jul 2015 15:18:52 +0900</pubDate>
       
-      <guid>http://localhost:1313/post/be-swifty/</guid>
+      <guid>http://daisuke310vvv.github.io/post/be-swifty/</guid>
       <description>
 
 &lt;h2 id=&#34;swiftに移行した:9c41c890be2d301475e94c72a08a25fa&#34;&gt;Swiftに移行した&lt;/h2&gt;
